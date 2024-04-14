@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property='og:type' content='website'>
+    <meta property='og:title' content="ひっとあんどぶろー">
+    <meta property="og:description" content="Hit & Blow">
+    <title>ひっとあんどぶろー</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1 id="yomogi-regular">ひっとあんどぶろー</h1>
+    <div id="game-container">
+        <label for="guess-input">4桁の数字を入れてください。</label>
+        <div id="info-icon" class="info-icon">ℹ️
+            <span class="info-text"></span>
+            <div id="info-popup" class="info-popup">
+                <p>Hit & Blowは、4桁の異なる数字からなる秘密の数を当てるゲームです。</p>
+                <p>プレイヤーは推測を行い、その推測が正しい数字であり、位置も正しい場合は「Hit」とカウントされます。</p>
+                <p>数字は正しいが位置が異なる場合は、「Blow」とカウントされます。</p>
+                <p>ゲームをプレイするには、4桁の数字を入力して「決定」ボタンをクリックします。</p>
+            </div>
+        </div>
+            <div class="input-container">
+                <input type="text" id="guess-input" placeholder="数字を入力" class="input-field">            <button onclick="checkGuess()">決定</button>
+        </div>
+        <div id="result"></div>
+        <div id="log"></div>
+    </div>
+    <div id="rules-container" class="rules-container">
+        <h2>ルール</h2>
+        <p>Hit & Blowは、4桁の異なる数字からなる秘密の数を当てるゲームです。</p>
+        <p>プレイヤーは推測を行い、その推測が正しい数字であり、位置も正しい場合は「Hit」とカウントされます。</p>
+        <p>数字は正しいが位置が異なる場合は、「Blow」とカウントされます。</p>
+        <p>ゲームをプレイするには、4桁の数字を入力して「決定」ボタンをクリックします。</p>
+    </div>
+    <div id="links-container" class="links-container">
+        <h2>リンク集</h2>
+        <p>作った人 → <a href="https://x.com/kinoko1216">@kinoko1216</a></p>
+        <p>フォント → <a href="https://fonts.google.com/specimen/Yomogi">Yomogi</a></p>
+        <p>GitHub → <a href="https://github.com/kinoko2k/Hit_and_Blow">kinoko2k/Hit_and_Blow</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
